@@ -1,0 +1,44 @@
+﻿html {
+    // This defines what 1rem is
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+    @include respond(tab-land) { // Width > 1200px
+        font-size: 56.25%; // 1rem 9px, 9/16 = 56.25%
+    }
+    @include respond(phone) { // Width < 900px
+        font-size: 50%; // 1rem 8px, 8/16 = 50%
+    }
+
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'bhjMedium', sans-serif;
+    direction: $dir;
+    text-align: $start-dir;
+}
+
+*{
+    font-family: inherit;
+}
+
+input, a, button{
+    font-family: 'bhjMedium', sans-serif;
+}
+
+button{
+    cursor: pointer;
+    font-size: 1.6rem;
+
+    &:focus, &:active{
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}

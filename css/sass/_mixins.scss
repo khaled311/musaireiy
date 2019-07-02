@@ -1,0 +1,74 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint == 320 {
+        @media only screen and (max-width: 20em) { @content };    //0 - 320px
+    }
+    @if $breakpoint == 375 {
+        @media only screen and (max-width: 23.4375em) { @content };    //320 - 375px
+    }
+    @if $breakpoint == 425 {
+        @media only screen and (max-width: 26.5625em) { @content };    // 375 - 425px
+    }
+    @if $breakpoint == 480 {
+        @media only screen and (max-width: 30em) { @content };    // 375 - 425px
+    }
+    @if $breakpoint == xsTOsm {
+        @media only screen and (min-width: 30.0625em) and (max-width: 47.9375em) { @content };    // 375 - 425px
+    }
+    @if $breakpoint == smMid {
+        @media only screen and (min-width: 37.5625em) and (max-width: 47.9375em) { @content };    // 375 - 425px
+    }
+    @if $breakpoint == 767 {
+        @media only screen and (max-width: 47.9375em) { @content };    // 425 - 768px
+    }
+    @if $breakpoint == mid {
+        @media only screen and (min-width: 47.9375em) and (max-width: 61.9375em) { @content };    // 768 - 991px
+    }
+    @if $breakpoint == 991 {
+        @media only screen and (max-width: 61.9375em) { @content };     //768 - 991px
+    }
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };
+    }
+    @if $breakpoint == say-max {
+        @media only screen and (max-width: 120em) { @content };
+    }
+    @if $breakpoint == say-min{
+        @media only screen and (min-width: 120.0625em) { @content };
+    }
+
+    @media only screen and (max-width: $breakpoint) { @content };
+}
+
+@mixin Xs {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+  //For Small
+  @mixin Sm {
+    @media (max-width: 991px) {
+      @content;
+    }
+  }
+  //For Medium
+  @mixin Md {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+  //For Extra Large
+  @mixin Lg {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+  

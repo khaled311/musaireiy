@@ -1,0 +1,24 @@
+{
+  "name": "almesery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-rtl": "node-sass --source-map true css/sass/main-rtl.scss css/style__home-rtl.css --output-style expanded -w",
+    "sass-ltr": "node-sass --source-map true css/sass/main-ltr.scss css/style__home-ltr.css --output-style expanded -w",
+    "pug": "pug -w -P index.pug",
+    "server": "lite-server",
+    "dev": "npm-run-all -p server sass-rtl sass-ltr pug"
+  },
+  "author": "sarhan",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "lite-server": "^2.5.3",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^7.0.17",
+    "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}

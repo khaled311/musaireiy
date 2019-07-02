@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        - var title = "ALMUSAIRIEY"
+        title #{title}
+        script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpcvkfdvIpjUPggYLBP2BR9d8iLnqeE4M")
+        - var style = "css/style__home-rtl.css"
+        include includes/css.pug
+    body
+
+        .side-nav-pa
+            .side-nav
+                button.drop-btn
+                    span
+                    span
+                    span
+                
+                ul
+                    //- li.logo
+                    //-     img(src="images/logo.png", alt="Logo")
+                    li.link
+                        a(href="#") الرئيسية
+                    li.link
+                        a(href="#") من نحن
+                    li.link
+                        a(href="#") خدماتنا
+                    li.link
+                        a(href="#") الموردين
+                    li.link
+                        a(href="#") عملائنا
+                    li.link
+                        a(href="#") التوظيف
+                    li.link
+                        a(href="#") إتصل بنا
+                    li.search
+                        form(class="form-inline")
+                            input(class="form-control mr-sm-2" type="search" placeholder="البحث" aria-label="Search")
+                            button(class="btn" type="submit")
+                                i(class="fas fa-search")
+
+        //- Start Header
+        .nav.fixed-top
+            .container.d-flex
+                button.drop-btn
+                    span
+                    span
+                    span
+                .right
+                    a(href="#")
+                        img(src="images/logo.png", alt="")
+
+                .left
+                    .top
+                        ul.d-flex.align-items-center
+                            li
+                                a(href="#")
+                                    i(class="fas fa-map-marker-alt")
+                                    span 11511 الرياض - السعودية
+                            li
+                                a(href="#")
+                                    i(class="fas fa-phone")
+                                    span (00966-11)4483808
+                            li
+                                a(href="#")
+                                    i(class="fas fa-fax")
+                                    span (00966-11)4469244
+                            li
+                                a(href="#")
+                                    i(class="fas fa-envelope")
+                                    span Info@Almusairiey.com
+                        button English
+
+                    .bottom
+                        ul.navnav
+                            li.navItem
+                                a(href="#").navLink الرئيسية
+                            li.navItem
+                                a(href="#").navLink من نحن
+                            li.navItem
+                                a(href="#").navLink خدماتنا
+                            li.navItem
+                                a(href="#").navLink الموردين
+                            li.navItem
+                                a(href="#").navLink عملائنا
+                            li.navItem
+                                a(href="#").navLink التوظيف
+                            li.navItem
+                                a(href="#").navLink إتصل بنا
+                        form(class="form-inline")
+                            input(class="form-control mr-sm-2" type="search" placeholder="البحث" aria-label="Search")
+                            button(class="btn" type="submit")
+                                i(class="fas fa-search")
+
+
+        //- Start Header
+        header
+            .content
+                div(class="owl-carousel owl-theme")
+                    .item.video
+                        a(href='images/ph.jpg' data-fancybox='gallery')
+                            img.d-block.w-100(src='images/header.jpg' alt='...')
+                            .icon
+                                .play
+                                    .shape
+                    .item
+                        a(href='images/ph.jpg' data-fancybox='gallery')
+                            img.d-block.w-100(src='images/header.jpg' alt='...')
+                            .icon
+                                .play
+                                    .shape
+                    .item
+                        a(href='images/ph.jpg' data-fancybox='gallery')
+                            img.d-block.w-100(src='images/header.jpg' alt='...')
+                            .icon
+                                .play
+                                    .shape
+                    .item
+                        a(href='images/ph.jpg' data-fancybox='gallery')
+                            img.d-block.w-100(src='images/header.jpg' alt='...')
+                            .icon
+                                .play
+                                    .shape
+
+        //- End Of Header
+
+        //- Start Od Overview
+        .overview.padd-y
+            .container
+                .row
+                    .col-lg-6
+                            h2 شركة المصيريعي للمعدات الصناعية
+                            .shape
+                                img(src="images/overview.jpg", alt="").img-responsive
+                            p شركة المصيريعي للمعدات الصناعية هي واحدة من الشركات الرائدة في مجال تجارة المعدات الصناعية في الشرق الأوسط. بعد التنبؤ السليم للمملكة النامية المسار في 1383 ه (1963 ز) شركتنا بدأت العمل في مجال تجارة المعدات الصناعية لأداء دور مهم في التنمية الصناعية في المملكة. مع الأخذ في الاعتبار متطلبات السوق الصناعية للمصانع ، المخارط ، القناة ، الخشب العمل ، معدات ورش تشكيل وصيانة الألومنيوم
+                            a(href="#") قراءة المزيد
+                    .col-lg-6.px-0
+                        .shape
+                            img(src="images/overview.jpg", alt="").img-responsive
+                        a(href="#") قراءة المزيد
+
+        //- End Of Overview
+
+        //- Start Activity
+
+        .activity.padd-y
+            .container
+                h2.after نشاطات الشركة
+                .row
+                    div(class="owl-carousel owl-theme")
+                        div(class="item")
+                            a(href="#")
+                                img(src="images/act-item1.png", alt="Client")
+                                p.title قسم المعدات الصناعية
+                                p.details تجارة آلات الورش وآلات تشكيل الصفائح المعدنية وآلات اللحام وماكينات ورش الدكت وغيرها
+                        div(class="item")
+                            a(href="#")
+                                img(src="images/act-item2.png", alt="Client")
+                                p.title قسم المواتير ومتغيرات السرعة
+                                p.details المحركات الكهربائية لها أهمية عالية من خلال تأمين أنواع أساسية وأحجام المحركات
+                        div(class="item")
+                            a(href="#")
+                                img(src="images/act-item3.png", alt="Client")
+                                p.title قسم العدد والادوات والمواد الخام
+                                p.details لدمج خدمة العملاء لدينا ، أنشأنا قسم كبير للأدوات والملحقات المتعلقة بالمعدات المتوفرة
+                        div(class="item")
+                            a(href="#")
+                                img(src="images/act-item1.png", alt="Client")
+                                p.title قسم المعدات الصناعية
+                                p.details تجارة آلات الورش وآلات تشكيل الصفائح المعدنية وآلات اللحام وماكينات ورش الدكت وغيرها
+                        div(class="item")
+                            a(href="#")
+                                img(src="images/act-item2.png", alt="Client")
+                                p.title قسم المواتير ومتغيرات السرعة
+                                p.details المحركات الكهربائية لها أهمية عالية من خلال تأمين أنواع أساسية وأحجام المحركات
+                        div(class="item")
+                            a(href="#")
+                                img(src="images/act-item3.png", alt="Client")
+                                p.title قسم العدد والادوات والمواد الخام
+                                p.details لدمج خدمة العملاء لدينا ، أنشأنا قسم كبير للأدوات والملحقات المتعلقة بالمعدات المتوفرة
+                        div(class="item")
+                            a(href="#")
+                                img(src="images/act-item1.png", alt="Client")
+                                p.title قسم المعدات الصناعية
+                                p.details تجارة آلات الورش وآلات تشكيل الصفائح المعدنية وآلات اللحام وماكينات ورش الدكت وغيرها
+                        div(class="item")
+                            a(href="#")
+                                img(src="images/act-item2.png", alt="Client")
+                                p.title قسم المواتير ومتغيرات السرعة
+                                p.details المحركات الكهربائية لها أهمية عالية من خلال تأمين أنواع أساسية وأحجام المحركات
+                        div(class="item")
+                            a(href="#")
+                                img(src="images/act-item3.png", alt="Client")
+                                p.title قسم العدد والادوات والمواد الخام
+                                p.details لدمج خدمة العملاء لدينا ، أنشأنا قسم كبير للأدوات والملحقات المتعلقة بالمعدات المتوفرة
+
+        //- End Of Activity
+
+        //- Start Importers
+
+        .importers.padd-y
+            img(src="images/pattern.png", alt="")
+            .container
+                h2.text-center.after الموردين
+                .row
+                    div(class="owl-carousel owl-theme")
+                        div(class="item")
+                            img(src="images/import1.jpg", alt="Client")
+                        div(class="item")
+                            img(src="images/import2.jpg", alt="Client")
+                        div(class="item")
+                            img(src="images/import3.jpg", alt="Client")
+                        div(class="item")
+                            img(src="images/import4.jpg", alt="Client")
+                        div(class="item")
+                            img(src="images/import5.jpg", alt="Client")
+                        div(class="item")
+                            img(src="images/import1.jpg", alt="Client")
+                        div(class="item")
+                            img(src="images/import2.jpg", alt="Client")
+                        div(class="item")
+                            img(src="images/import3.jpg", alt="Client")
+                        div(class="item")
+                            img(src="images/import4.jpg", alt="Client")
+                        div(class="item")
+                            img(src="images/import5.jpg", alt="Client")
+
+        //- End Of Importers
+
+        //- Start Clients
+
+        .clients.padd-y
+            .container
+                h2.after عملائنا
+                .row.align-items-center.justify-content-center
+                    div.top-el
+                        img(src="images/client1.png", alt="").img-responsive
+                    div.top-el
+                        img(src="images/client2.png", alt="").img-responsive
+                    div.top-el
+                        img(src="images/client3.png", alt="").img-responsive
+                    div.top-el
+                        img(src="images/client4.png", alt="").img-responsive
+                    div.top-el
+                        img(src="images/client5.png", alt="").img-responsive
+                    div
+                        img(src="images/client6.png", alt="").img-responsive
+                    div
+                        img(src="images/client7.png", alt="").img-responsive
+                    div
+                        img(src="images/client8.png", alt="").img-responsive
+                    div
+                        img(src="images/client9.png", alt="").img-responsive
+                    div
+                        img(src="images/client10.png", alt="").img-responsive
+
+
+        //- End OF Clients
+
+        //- Start Footer
+
+        footer
+            .container
+                .row
+                    img(src="images/pattern.png", alt="" class="patt")
+                    .col-md-6
+                        .right
+                            .logo
+                                a(href="#")
+                                    img(src="images/logo.png", alt="")
+
+                            .contact-info
+                                ul.d-flex.flex-column
+                                    li
+                                        a(href="#")
+                                            i(class="fas fa-map-marker-alt")
+                                            span 11511 الرياض - السعودية
+                                    li
+                                        a(href="#")
+                                            i(class="fas fa-phone")
+                                            span (00966-11)4483808
+                                    li
+                                        a(href="#")
+                                            i(class="fas fa-fax")
+                                            span (00966-11)4469244
+                                    li
+                                        a(href="#")
+                                            i(class="fas fa-envelope")
+                                            span Info@Almusairiey.com
+
+                            .social-icons
+                                a(href="#")
+                                    i(class="fab fa-instagram")
+                                a(href="#")
+                                    i(class="fab fa-twitter")
+                                a(href="#")
+                                    i(class="fab fa-facebook-f")
+
+                            .copyright
+                                p © شركة المصيريعي للمعدات الصناعية 2019 - تصميم وتطوير
+                                    a(href="#")
+                                        img(src="images/tasawk.png", alt="")
+                                        |تسوق
+                    .col-md-62.px-0
+                        .map#map
+
+        //- End Of Footer
+
+
+    include includes/scripts.pug
